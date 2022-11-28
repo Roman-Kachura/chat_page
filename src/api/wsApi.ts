@@ -1,6 +1,6 @@
 import {sendMessageDataType} from '../store/reducers/usersReducer';
 
-const url = 'ws://itransition-chat-server.herokuapp.com/';
+const url = 'wss://itransition-chat-server.herokuapp.com/';
 
 export const wsApi = {
     createSocket(id: number) {
