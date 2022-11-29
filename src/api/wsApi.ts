@@ -4,7 +4,7 @@ const url = 'wss://itransition-chat-server.herokuapp.com/';
 
 export const wsApi = {
     createSocket(id: number) {
-        return new WebSocket(`${url}/users/${id}`);
+        return new WebSocket(`${url}users/${id}`);
     },
     sendMessage(data: { msg: sendMessageDataType, ws: WebSocket }) {
         const res = {...data.msg, method: 'message'};
